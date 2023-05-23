@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ce140a, #050060);
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px #000;
+}
+.barra {
+    padding-top: 35px;
+    padding-right: 25px;
+}
+.barra li {
+    display: inline;
+    list-style: none;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+.barra a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logo {
+    display: inline-flex;
+    font-size: 35px;
+    padding: 27px;
+    padding-left: 50px;
+    padding-top: 32px;
+    text-align: center;
+}
+nav {
+    display: none;
+}
+
+.fa-bars {
+    padding: 35px;
+    margin-right: 20px;
+}
+.fa-bars:hover {
+    color: rgb(205, 50, 50);
+}
+
+.portada{
+    display: flex;
+    padding-top: 5px;
+    text-shadow: 1px 1px 5px #000;
+    text-align: center;
+}
+.mainimg{
+    background-image: url(./media/Caretas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #050060;
+    width: 50%;
+    min-height: 350px;
+    margin-right: 2.5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.jumbotron{
+    width: 50%;
+    margin-left: 2.5px;
+    margin-right: 5px;
+}
+.jumbotron h1{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px #000;
+    padding-left: 20px;
+    background: linear-gradient(to right, #ce140a, #050060);
+}
+.btn-primary{
+    background-color: rgb(172, 26, 26);
+    border-color: red;
+    }
+.btn-primary:hover{
+    background-color: rgb(172, 26, 26);
+    border-color: red;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.total h4{
+    padding-top: 5px;
+}
+.reset{
+    margin-right: 20px;
+}
+@media only screen and (min-width: 430px) and (max-width: 800px) {
+    .logotxt{
+        font-size: 60%;
+    }
+    .fa-bars{
+        font-size: 80%;
+    }
+    .menu{
+        font-size: 80%;
+    }
+    .jumbotron{
+        font-size: 75%;
+    }
+    .jumbotron h1{
+        font-size: 20px;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    nav {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+}
