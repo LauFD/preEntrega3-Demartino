@@ -22,7 +22,6 @@
                 <li><a href="#">Inicio</a></li>
             </ul>
         </nav>
-        
     </header>
 
     <div class="portada">
@@ -37,9 +36,7 @@
     <h2>Obras en cartelera</h2>
 
     <section class="container-fluid">
-        <div class="obras row" id="misobras">
-
-        </div>
+        <div class="obras row" id="misobras"></div>
     </section>
 
     <div>
@@ -51,14 +48,47 @@
                     <th>Precio</th>
                 </tr>
             </thead>
-            <tbody id="tablabody">
-
-            </tbody>
+            <tbody id="tablabody"></tbody>
         </table>
         <div class="total">
             <h4 id="total">Total a pagar:</h4>
-            <div id = "resetB" class="reset btn btn-primary">Borrar Carrito</div>
+            <div id="resetB" class="reset btn btn-primary">Borrar Carrito</div>
+            <div id="confirmarCompra" class="btn btn-success">Confirmar Compra</div>
         </div>
+    </div>
+
+    <!-- Modal para agregar al carrito -->
+    <div class="modal fade" id="agregarModal" tabindex="-1" aria-labelledby="agregarModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="agregarModalLabel">Añadir al carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="agregarModalBody">
+            <!-- Contenido del modal -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal para confirmar la compra -->
+    <div class="modal fade" id="confirmarModal" tabindex="-1" aria-labelledby="confirmarModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="confirmarModalLabel">Confirmar Compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>¿Estás seguro de que deseas confirmar la compra?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="confirmarBtn">Confirmar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
